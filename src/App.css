@@ -3,4 +3,5 @@ html, body{
     box-sizing: border-box;
     background-color: #0f0f0f;
     color: white;
+    width: 100vw;
 }

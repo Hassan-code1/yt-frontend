@@ -5,11 +5,13 @@ import { RiUploadLine } from "react-icons/ri";
 import { GoBell } from "react-icons/go";
 
 import "../styles/Navbar.css";
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
     return(
         <div className="navbar-container flex items-center justify-between px-4 py-2">
             <div className="flex items-center gap-2 text-red-600 text-2xl font-bold">
-                <FaBars className="text-white mr-8" />
+                <div className="p-2 hover:rounded-3xl mr-8 hover:bg-[#222222]">
+                    <FaBars className="text-white active:scale-95" onClick={toggleSidebar}/>
+                </div>
                 <FaYoutube  />
                 <span className="text-white text-2xl font-mono">YouTube</span>
             </div>
